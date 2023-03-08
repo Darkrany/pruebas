@@ -28,7 +28,8 @@ export  function Year() {
           <br/>
           <button onClick={NextYear}>Siguiente Año</button>
           <br/>
-          <input onChange={e => setYear(e.target.value)}/>
+          <input onChange={e => setYear(e.target.value)}/>  
+          <p>esto va!??</p>
 
       </div>
   )

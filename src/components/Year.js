@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
+
 import { useState } from 'react';
-import PropTypes from 'prop-types';
+
 
 
 
@@ -9,8 +9,7 @@ export  function Year() {
   const currentYear = new Date().getFullYear();
   
   const [YearCounter, setYear] = useState(currentYear)
-  const [ahora, setAhora] = useState(Date.now());
-  
+ 
   const BackYear = () => {
      
     setYear(YearCounter-1);
@@ -23,11 +22,6 @@ export  function Year() {
     setYear(YearCounter+1);
   }
 
-  useEffect(() => {
-    
-    setYear(YearCounter + 1)
-  }, [ahora])
- 
   return (
     <div>
         
